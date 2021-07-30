@@ -1,0 +1,312 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:#e7e7e7;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(71, 71, 71);
+}
+
+.padding-nav {
+  overflow: hidden;
+  background-color: #dddddd;
+  box-shadow: rgb(211, 209, 209);
+}
+
+
+.padding-nav a {
+  float: left;
+  display: block;
+  color: #050505;
+  text-align: center;
+  padding: 14px 16px;
+  font: bold;
+  text-decoration: none;
+  box-align: center;
+
+
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.padding-nav a:hover {
+  background-color: rgb(112, 111, 111);
+  color: rgb(3, 44, 37);
+}
+
+.topnav a.active,
+.padding-nav a.active {
+  background-color: #46a884;
+  color: white;
+  padding: auto;
+
+}
+
+.padding-nav a.active {
+  background-color: #8095ad;
+  color: white;
+  padding: auto;
+  height: 20px;
+
+}
+
+.topnav .icon,
+.padding-nav .icon {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .padding-nav a:not(:first-child) {
+    display: none;
+  }
+
+  .padding-nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+
+  .padding-nav.responsive {
+    position: relative;
+  }
+
+  .padding-nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .padding-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+/* Slideshow container */
+.mySlides {display: none;}
+img {vertical-align: middle;}
+.slideshow-container {
+  box-sizing: border-box;
+  width:98%;
+
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* slider ends*/
+
+.hot{
+  border: solid 2px #cfcdcd;
+}
+
+.hot h2{
+  font-size: 32px;
+  font-weight: 400;
+  color: #4fbfa8;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+
+/* latest updates starts*/
+.row{
+  
+  display: flex;
+  width: 100%;
+}
+
+
+.row .col-3{
+  background-color:#e7e7e7;
+  width:23%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin:1% 1%;
+}
+
+.row .col-3 img{
+  position: relative;
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  padding: 10px;
+  background-color:#e7e7e7;
+  width:100%;
+}
+.row .col-3 .details{
+  text-align: center;
+  position: relative;
+  -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+  -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+  padding: 10px;
+  background-color:#e7e7e7;
+  width:100%;
+  text-decoration: none;
+  
+  
+}
+
+.row .col-3 .details h3 a,.row .col-3 .details .price{
+  border-radius: 5%;
+  margin:5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: none;
+  color: #383737;
+  text-transform: bold;
+  padding: none;
+  
+  }
+
+.row .col-3 .details .btn{
+background-color:rgb(234, 241, 238);
+border-radius: 5%;
+margin:5px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+text-decoration: none;
+
+color: rgb(0, 0, 0);
+border: solid 2px #b6b9b7;
+}
+
+/* latest updates ends*/
+
+/*footer*/
+
+.footer{
+  border: solid 2px #302f2f;
+  background-color:rgb(83, 83, 85);
+  color:white;
+}
+.footer .row{
+  display:flex;
+  width: 100%;
+  
+}
+
+
+.footer .row .col-3{
+  width:25%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: none;
+  color:white;
+  background-color:rgb(83, 83, 85);
+}
+.footer .row .col-3 a{
+
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: none;
+  color:white;
+  padding:10px;
+ 
+}
+
+.footer #copyright{
+  text-align: center;
+}
