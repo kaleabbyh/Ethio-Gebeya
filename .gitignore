@@ -1,10 +1,12 @@
 myenv/
 
-/frontend/package-lock.json
-**/node_modules
+frontend/package-lock.json
+package-lock.json
 node_modules
 # dependencies
 /node_modules
+build
+/frontend/build
 /.pnp
 .pnp.js
 
